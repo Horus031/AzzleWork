@@ -1,3 +1,53 @@
+body {
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: DM Sans, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  overflow: hidden;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.button::after {
+  position: absolute;
+  inset: 0px;
+  left: 0px;
+  bottom: 100%;
+  z-index: -1;
+  transform-origin: top right;
+  transition-duration: 300ms;
+}
+
+.button:hover::after {
+  bottom: 0;
+}
+
 .orange-gradient-1 {
   background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
   filter: blur(55px);
@@ -8,6 +58,26 @@
   filter: blur(55px);
 }
 
+.global-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1332px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.bg-colorOrangyRed::after {
+  content: "";
+  background-color: #fe330a;
+}
+
+.border-colorOrangyRed::after {
+  background-color: #fe330a;
+}
+
+.bg-colorLinenRuffle {
+  background-color: #efeae3;
+}
 
 /* Custom CSS for accordion */
 .accordion-item .accordion-header {
@@ -117,11 +187,15 @@
   transform: rotate(0);
 }
 
-.accordion-item.active .accordion-icon.is-outline-green .accordion-icon-plus::before {
+.accordion-item.active
+  .accordion-icon.is-outline-green
+  .accordion-icon-plus::before {
   background: #39ff14;
 }
 
-.accordion-item.active .accordion-icon.is-outline-green .accordion-icon-plus::after {
+.accordion-item.active
+  .accordion-icon.is-outline-green
+  .accordion-icon-plus::after {
   transform: rotate(0deg);
   opacity: 0;
 }
@@ -139,7 +213,6 @@
   opacity: 1;
   transform: translateY(0px);
   margin-top: 15px;
-
 }
 
 .accordion-item.is-2:has(.active),
@@ -150,7 +223,8 @@
 }
 
 .footer-text-slider {
-  animation: horizontal-slide-from-right-to-left 10s linear infinite normal forwards;
+  animation: horizontal-slide-from-right-to-left 10s linear infinite normal
+    forwards;
 }
 
 .horizontal-slide-from-right-to-left {
