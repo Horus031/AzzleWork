@@ -22,15 +22,10 @@
   <div class="page-wrapper relative z-[1] bg-white">
     <!-- header -->
     <header>
-
-
-
-
-
       <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between text-2xl mx-auto p-4">
 
-          <img src="/img/logo-dark.png" class="h-6" alt="Flowbite Logo" />
+          <img src="/img/logo-dark.png" width="96" height="24" alt="Flowbite Logo" />
 
 
           <button data-collapse-toggle="navbar-dropdown" type="button"
@@ -44,60 +39,124 @@
           </button>
           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul
-              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-           
-              <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm">Demo
-                  <!-- <img src="/img/icon-black-cheveron-right.svg" alt=""> -->
-                  <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1 1 4 4 4-4" />
-                  </svg></button>
+              class="flex flex-col text-base font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li class="group relative menu-items transition-all">
+                <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm">Demo
+
+                  <img src="./img/icon-black-cheveron-right.svg" alt=""
+                    class="rotate-90 transition-all group-hover:rotate-0" width="16" height="16">
+                </button>
                 <!-- Dropdown menu -->
-                <div id="dropdownNavbar"
-                  class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700 dark:divide-gray-600">
-                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <div
+                  class="dropdown-menu absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 transition-all">
                     <li>
-                      <a href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home 01</a>
+                      <a href="#" class="block px-4 py-2 hover:text-[#FE330A] transition-all">Home
+                        01</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 hover:text-[#FE330A] transition-all">Home
+                        02</a>
                     </li>
                     <li>
                       <a href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home 02</a>
+                        class="block px-4 py-2 hover:text-[#FE330A] transition-all">Home
+                        03</a>
                     </li>
                     <li>
                       <a href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home 03</a>
-                    </li>
-                    <li>
-                      <a href="#"
-                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home 04</a>
+                        class="block px-4 py-2 hover:text-[#FE330A] transition-all">Home
+                        04</a>
                     </li>
                   </ul>
-                 
                 </div>
               </li>
               <li>
-                <a href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm "
-                  aria-current="page">About</a>
-                  
-                  
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm " aria-current="page">About</a>
+
+
               </li>
-              
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm ">Services</a>
+              <li class="group relative menu-items transition-all">
+                <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm">Services
+
+                  <img src="./img/icon-black-cheveron-right.svg" alt=""
+                    class="rotate-90 transition-all group-hover:rotate-0" width="16" height="16">
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="dropdown-menu absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class="py-2 text-sm text-gray-700 dark:text-gray-400 transition-all">
+
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:text-[#FE330A] transition-all">Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="block px-4 py-2 hover:text-[#FE330A] transition-all">Service
+                        Details
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="group relative menu-items transition-all">
+                <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm">Pages
+
+                  <img src="./img/icon-black-cheveron-right.svg" alt=""
+                    class="rotate-90 transition-all group-hover:rotate-0" width="16" height="16">
+                </button>
+                <!-- Dropdown menu -->
+                <div
+                  class="dropdown-menu absolute left-0 z-10 font-normal bg-white divide-y divide-gray-100 rounded-lg w-44 dark:bg-gray-700 dark:divide-gray-600">
+                  <ul class=" py-2 text-sm text-gray-700 dark:text-gray-400 transition-all">
+                    <li>
+                      <a href="#"
+                        class="flex justify-between block px-4 py-2 hover:text-[#FE330A] transition-all">blogs
+                        <img src="./img/icon-black-cheveron-right.svg" alt=""
+                          class=" transition-all group-hover:rotate-0" width="16" height="16">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="flex justify-between block px-4 py-2 hover:text-[#FE330A] transition-all">Team
+                        <img src="./img/icon-black-cheveron-right.svg" alt=""
+                          class=" transition-all group-hover:rotate-0" width="16" height="16">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="flex justify-between block px-4 py-2 hover:text-[#FE330A] transition-all">FAQ
+                        <img src="./img/icon-black-cheveron-right.svg" alt=""
+                          class=" transition-all group-hover:rotate-0" width="16" height="16">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="flex justify-between block px-4 py-2 hover:text-[#FE330A] transition-all">Portfolio
+                        <img src="./img/icon-black-cheveron-right.svg" alt=""
+                          class=" transition-all group-hover:rotate-0" width="16" height="16">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="flex justify-between block px-4 py-2 hover:text-[#FE330A] transition-all">Pricing
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        class="flex justify-between block px-4 py-2 hover:text-[#FE330A] transition-all">Utilities
+                        <img src="./img/icon-black-cheveron-right.svg" alt=""
+                          class=" transition-all group-hover:rotate-0" width="16" height="16">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm ">Pages</a>
-              </li>
-              <li>
-                <a href="#"
-                  class="block py-2 px-3 text-gray-900 rounded-sm ">Contact</a>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded-sm ">Contact</a>
               </li>
             </ul>
           </div>
@@ -120,17 +179,17 @@
     </header>
 
 
-<!-- footer -->
- <footer>
-<!-- footer top -->
+    <!-- footer -->
+    <footer>
+      <!-- footer top -->
 
-<!-- footer center -->
+      <!-- footer center -->
 
-<!-- footer  Bottom  -->
+      <!-- footer  Bottom  -->
 
 
-  
- </footer>
+
+    </footer>
 
 
 
